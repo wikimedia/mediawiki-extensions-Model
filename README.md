@@ -10,6 +10,7 @@ What is Model?
 
 Very simple and lightweight thing.
 Model allows you use model-objects over Mediawiki DatabaseBase class.
+
 With Model you can focus on work with objects, not SQL-queries.
 
 To start using Model:
