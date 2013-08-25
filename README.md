@@ -8,8 +8,6 @@ Model is extension for mediawiki brings "M" from MVC pattern into MediaWiki.
 What is Model?
 ==============
 
-- [[Examples]]
-
 Very simple and lightweight thing. See examples:
 
 - Without Model - fetch all users:
