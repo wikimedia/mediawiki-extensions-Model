@@ -3,7 +3,7 @@ Mediawiki-Model
 
 Model is extension for mediawiki brings "M" from MVC pattern into MediaWiki.
 
-![Model](http://i.imgur.com/kn1bvbB.png)
+![Model](http://i.imgur.com/QsakWVL.png)
 
 What is Model?
 ==============
