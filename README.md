@@ -53,6 +53,7 @@ Very simple and lightweight thing. See examples:
 ```
 
 - Without Model - update user name:
+
 ```php
   $dbr = wfGetDB( DB_MASTER );
   $dbr->update(
@@ -64,6 +65,7 @@ Very simple and lightweight thing. See examples:
 ```
 
 - With Model - update user name:
+
 ```php
   $user = Model_User::find( array( 'user_name' => 'John' ) );
   $user[0]->user_name = 'NewName';
@@ -78,12 +80,14 @@ Very simple and lightweight thing. See examples:
 ```
 
 - With Model - delete user:
+
 ```php
   $user = Model_User::find( array( 'user_name' => 'John' ) );
   $user[0]->delete();
 ```
 
 - With Model - create new user on form request:
+
 ```php
   //Form 'user create' was posted
   if( $wgRequest->wasPosted() ) {
@@ -95,6 +99,7 @@ Very simple and lightweight thing. See examples:
 ```
 
 - With Model - update existing user on form request:
+
 ```php
   //Form 'user create' was posted
   $userId = $wgRequest->getval('userid');
