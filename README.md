@@ -13,6 +13,12 @@ Model allows you use model-objects over Mediawiki DatabaseBase class.
 
 **With Model you can focus on work with objects, not SQL-queries.**
 
+```php
+ $user = new Model_User();
+ $user->password = '1234';
+ $user->save();
+```
+
 To start using Model:
 
 - include it in LocalSettings.php
