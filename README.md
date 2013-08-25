@@ -18,7 +18,7 @@ Model allows you use model-objects over Mediawiki DatabaseBase class.
  $user->save();
 ```
 
-To start using Model:
+**To start using Model**:
 
 - include it in LocalSettings.php
 - create model classes based on class Model with your model description
