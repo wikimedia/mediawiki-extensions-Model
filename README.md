@@ -112,5 +112,5 @@ Very simple and lightweight thing. See examples:
   }
 ```
 
-Usage
+How to use it?
 ======
