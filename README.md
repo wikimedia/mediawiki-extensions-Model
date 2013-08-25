@@ -73,6 +73,7 @@ Very simple and lightweight thing. See examples:
 ```
 
 - With Model - create new user:
+
 ```php
   $user = new Model_User();
   $user->user_name = 'John Name';
