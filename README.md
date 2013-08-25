@@ -17,6 +17,7 @@ Model allows you use model-objects over Mediawiki DatabaseBase class.
  $user->password = '1234';
  $user->save();
 ```
+more examples can be found [here](https://github.com/vedmaka/Mediawiki-Model/wiki/Examples).
 
 **To start using Model**:
 
