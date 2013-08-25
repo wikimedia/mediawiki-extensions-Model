@@ -79,12 +79,13 @@ abstract class Model
 
     }
 
-    /**
-     * Loads entity from database.
-     *
-     * @param $id
-     * @throws Exception
-     */
+	/**
+	 * Loads entity from database.
+	 *
+	 * @param $id
+	 * @return bool
+	 * @throws Exception
+	 */
     public function load( $id )
     {
 
@@ -127,6 +128,47 @@ abstract class Model
 
     }
 
+	/**
+	 * Count entities. There some code that should be fixed.
+	 * @param string $where
+	 * @param array $options
+	 * @return int
+	 */
+	public function count( $where = 'all', $options = array() )
+	{
+
+		$dbr = wfGetDB( DB_SLAVE );
+
+		if ( !is_array( $where ) && $where == 'all' ) {
+
+			/* Fetch all entities */
+			$collection = $dbr->select( static::$table,
+				'id',
+				array(),
+				__METHOD__,
+				$options
+			);
+
+		} else {
+
+			/* Fetch conditional entities */
+			$collection = $dbr->select( static::$table,
+				'id',
+				$where,
+				__METHOD__,
+				$options
+			);
+
+		}
+
+		/* Check result */
+		if ( !$collection ) return 0;
+
+		$count = $dbr->numRows( $collection );
+
+		return $count;
+
+	}
 
     /**
      * Save entity instance in database.
