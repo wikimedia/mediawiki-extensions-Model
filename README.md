@@ -69,3 +69,42 @@ Very simple and lightweight thing. See examples:
   $user[0]->user_name = 'NewName';
   $user->save();
 ```
+
+- With Model - create new user:
+```php
+  $user = new Model_User();
+  $user->user_name = 'John Name';
+  $insertId = $user->save();
+```
+
+- With Model - delete user:
+```php
+  $user = Model_User::find( array( 'user_name' => 'John' ) );
+  $user[0]->delete();
+```
+
+- With Model - create new user on form request:
+```php
+  //Form 'user create' was posted
+  if( $wgRequest->wasPosted() ) {
+    $user = new Model_User();
+    if( $user->validate() ) {
+      $user->save();
+    }
+  }
+```
+
+- With Model - update existing user on form request:
+```php
+  //Form 'user create' was posted
+  $userId = $wgRequest->getval('userid');
+  if( $wgRequest->wasPosted() ) {
+    $user = new Model_User( $userId );
+    if( $user->validate() ) {
+      $user->save();
+    }
+  }
+```
+
+Usage
+======
