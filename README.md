@@ -90,7 +90,7 @@ Very simple and lightweight thing. See examples:
     $user = new Model_User();
     if( $user->validate() ) {
       $user->save();
-    }
+    } 
   }
 ```
 
