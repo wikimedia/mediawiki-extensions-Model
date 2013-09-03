@@ -17,3 +17,17 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'model-desc' => '{{desc|name=Model|url=https://www.mediawiki.org/wiki/Extension:Model}}',
 );
+
+/** German (Deutsch)
+ * @author Metalhead64
+ */
+$messages['de'] = array(
+	'model-desc' => 'ORM-Abstraktionsmodell für MediaWiki-Entwickler',
+);
+
+/** Ukrainian (українська)
+ * @author Andriykopanytsia
+ */
+$messages['uk'] = array(
+	'model-desc' => 'ORM модель абстракції для розробників Медіавікі',
+);
