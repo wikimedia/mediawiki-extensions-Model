@@ -26,8 +26,8 @@ $wgExtensionCredits['specialpage'][] = array(
     'name' => 'Model',
     'version' => '0.1',
     'author' => 'Vedmaka',
-    'url' => '',
-    'descriptionmsg' => 'Model-desc',
+    'url' => 'https://www.mediawiki.org/wiki/Extension:Model',
+    'descriptionmsg' => 'model-desc',
 );
 
 /* Resource modules */
