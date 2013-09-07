@@ -60,6 +60,13 @@ $messages['mk'] = array(
 	'model-desc' => 'ORM-модел за извадоци од програмерите на МедијаВики',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'model-desc' => 'Modelle de astrazione ORM pe le sviluppature de MediaUicchi',
+);
+
 /** Ukrainian (українська)
  * @author Andriykopanytsia
  */
