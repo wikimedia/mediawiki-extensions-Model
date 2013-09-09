@@ -60,6 +60,20 @@ $messages['mk'] = array(
 	'model-desc' => 'ORM-модел за извадоци од програмерите на МедијаВики',
 );
 
+/** Portuguese (português)
+ * @author Cainamarques
+ */
+$messages['pt'] = array(
+	'model-desc' => 'Modelo de abstração ORM para desenvolvedores do MediaWiki',
+);
+
+/** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
+ */
+$messages['pt-br'] = array(
+	'model-desc' => 'Modelo de abstração ORM para desenvolvedores do MediaWiki',
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */
