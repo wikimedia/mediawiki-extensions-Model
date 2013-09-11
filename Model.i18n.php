@@ -32,6 +32,20 @@ $messages['de'] = array(
 	'model-desc' => 'ORM-Abstraktionsmodell für MediaWiki-Entwickler',
 );
 
+/** Spanish (español)
+ * @author Fitoschido
+ */
+$messages['es'] = array(
+	'model-desc' => 'Modelo de abstracción ORM para los desarrolladores de MediaWiki',
+);
+
+/** French (français)
+ * @author Sherbrooke
+ */
+$messages['fr'] = array(
+	'model-desc' => "Modèle d'abstraction ORM pour les programmeurs de MediaWiki",
+);
+
 /** Galician (galego)
  * @author Toliño
  */
