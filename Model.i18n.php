@@ -74,6 +74,13 @@ $messages['mk'] = array(
 	'model-desc' => 'ORM-модел за извадоци од програмерите на МедијаВики',
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'model-desc' => "Modèl d'abstraccion ORM pels programaires de MediaWiki",
+);
+
 /** Portuguese (português)
  * @author Cainamarques
  */
