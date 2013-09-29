@@ -67,6 +67,13 @@ $messages['ja'] = array(
 	'model-desc' => 'MediaWiki 開発者向けの ORM 抽象モデル',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'model-desc' => 'ORM-Abstraktiounsmodell fir MediaWiki-Entwéckler',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -100,6 +107,13 @@ $messages['pt-br'] = array(
  */
 $messages['roa-tara'] = array(
 	'model-desc' => 'Modelle de astrazione ORM pe le sviluppature de MediaUicchi',
+);
+
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'model-desc' => 'Модель ORM-абстракции для разработчиков MediaWiki',
 );
 
 /** Ukrainian (українська)
