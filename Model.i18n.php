@@ -81,6 +81,13 @@ $messages['mk'] = array(
 	'model-desc' => 'ORM-модел за извадоци од програмерите на МедијаВики',
 );
 
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'model-desc' => 'ORM abstractiemodel voor ontwikkelaars van MediaWiki',
+);
+
 /** Occitan (occitan)
  * @author Cedric31
  */
