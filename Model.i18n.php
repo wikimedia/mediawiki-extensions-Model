@@ -129,3 +129,10 @@ $messages['ru'] = array(
 $messages['uk'] = array(
 	'model-desc' => 'ORM модель абстракції для розробників Медіавікі',
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'model-desc' => '为MediaWiki开发者的ORM抽象模型',
+);
