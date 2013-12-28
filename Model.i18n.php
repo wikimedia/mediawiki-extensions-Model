@@ -32,6 +32,13 @@ $messages['de'] = array(
 	'model-desc' => 'ORM-Abstraktionsmodell für MediaWiki-Entwickler',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'model-desc' => 'Abstrakciski model ORM za wuwijarjow MediaWiki',
+);
+
 /** Spanish (español)
  * @author Fitoschido
  */
@@ -51,6 +58,13 @@ $messages['fr'] = array(
  */
 $messages['gl'] = array(
 	'model-desc' => 'Modelo de abstracción ORM para os desenvolvedores de MediaWiki',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'model-desc' => 'Abstrakciski model ORM za wuwiwarjow MediaWiki',
 );
 
 /** Italian (italiano)
