@@ -81,6 +81,13 @@ $messages['ja'] = array(
 	'model-desc' => 'MediaWiki 開発者向けの ORM 抽象モデル',
 );
 
+/** Korean (한국어)
+ * @author Priviet
+ */
+$messages['ko'] = array(
+	'model-desc' => '미디어위키 개발자를 위한 ORM 추상화 모델',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
