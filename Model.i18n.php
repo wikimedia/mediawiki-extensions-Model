@@ -46,6 +46,13 @@ $messages['es'] = array(
 	'model-desc' => 'Modelo de abstracción ORM para los desarrolladores de MediaWiki',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'model-desc' => 'مدل انتزاعی اُ‌آر‌ام برای توسعه‌دهندگان مدیاویکی',
+);
+
 /** French (français)
  * @author Sherbrooke
  */
