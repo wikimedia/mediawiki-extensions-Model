@@ -24,7 +24,7 @@ $wgModelDir = dirname( __FILE__ );
 $wgExtensionCredits['specialpage'][] = array(
     'path' => __FILE__,
     'name' => 'Model',
-    'version' => '0.1',
+    'version' => '0.2.0',
     'author' => 'Vedmaka',
     'url' => 'https://www.mediawiki.org/wiki/Extension:Model',
     'descriptionmsg' => 'model-desc',
@@ -40,6 +40,7 @@ $wgResourceModules['ext.Model.main'] = array(
 );
 
 /* Message Files */
+$wgMessagesDirs['Model'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Model'] = dirname( __FILE__ ) . '/Model.i18n.php';
 
 /* Autoload classes */
