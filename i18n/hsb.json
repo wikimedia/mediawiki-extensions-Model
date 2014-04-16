@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "model-desc": "Abstrakciski model ORM za wuwiwarjow MediaWiki"
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"model-desc": "Abstrakciski model ORM za wuwiwarjow MediaWiki"
 }

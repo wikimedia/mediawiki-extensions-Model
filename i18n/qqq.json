@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Raymond"
-        ]
-    },
-    "model-desc": "{{desc|name=Model|url=https://www.mediawiki.org/wiki/Extension:Model}}"
+	"@metadata": {
+		"authors": [
+			"Raymond"
+		]
+	},
+	"model-desc": "{{desc|name=Model|url=https://www.mediawiki.org/wiki/Extension:Model}}"
 }

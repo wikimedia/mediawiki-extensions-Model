@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Sherbrooke"
-        ]
-    },
-    "model-desc": "Modèle d'abstraction ORM pour les programmeurs de MediaWiki"
+	"@metadata": {
+		"authors": [
+			"Sherbrooke"
+		]
+	},
+	"model-desc": "Modèle d'abstraction ORM pour les programmeurs de MediaWiki"
 }

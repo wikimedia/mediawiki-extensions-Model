@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Andriykopanytsia"
-        ]
-    },
-    "model-desc": "ORM модель абстракції для розробників Медіавікі"
+	"@metadata": {
+		"authors": [
+			"Andriykopanytsia"
+		]
+	},
+	"model-desc": "ORM модель абстракції для розробників Медіавікі"
 }
