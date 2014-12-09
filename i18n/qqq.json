@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Raymond"
+			"Raymond",
+			"Purodha"
 		]
 	},
-	"model-desc": "{{desc|name=Model|url=https://www.mediawiki.org/wiki/Extension:Model}}"
+	"model-desc": "{{desc|name=Model|url=https://www.mediawiki.org/wiki/Extension:Model}}\n\nORM = Object-relational mapping."
 }
