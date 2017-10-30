@@ -41,7 +41,6 @@ $wgResourceModules['ext.Model.main'] = array(
 
 /* Message Files */
 $wgMessagesDirs['Model'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['Model'] = dirname( __FILE__ ) . '/Model.i18n.php';
 
 /* Autoload classes */
 $wgAutoloadClasses['Model'] = dirname( __FILE__ ) . '/Model.class.php';
