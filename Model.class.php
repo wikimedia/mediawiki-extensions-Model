@@ -91,7 +91,7 @@ abstract class Model
 
 		$this->isNew = false;
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		/* Fetch entity by id */
 		$entity = $dbr->selectRow( static::$table,
@@ -137,7 +137,7 @@ abstract class Model
 	public function count( $where = 'all', $options = array() )
 	{
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		if ( !is_array( $where ) && $where == 'all' ) {
 
@@ -258,7 +258,7 @@ abstract class Model
 	public static function find( $where = 'all', $options = array() )
 	{
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		if ( !is_array( $where ) && $where == 'all' ) {
 
@@ -333,7 +333,7 @@ abstract class Model
 					$value = "$value";
 				}
 				if ( $this->properties[$name] == 'timestamp' && is_integer( $value ) ) {
-					$dbr = wfGetDB( DB_SLAVE );
+					$dbr = wfGetDB( DB_REPLICA );
 					$value = $dbr->timestamp( $value );
 				}
 
