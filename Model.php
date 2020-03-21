@@ -30,15 +30,6 @@ $wgExtensionCredits['specialpage'][] = array(
     'descriptionmsg' => 'model-desc',
 );
 
-/* Resource modules */
-$wgResourceModules['ext.Model.main'] = array(
-    'localBasePath' => dirname( __FILE__ ) . '/',
-    'remoteExtPath' => 'Model/',
-    'group' => 'ext.Model',
-    'scripts' => '',
-    'styles' => ''
-);
-
 /* Message Files */
 $wgMessagesDirs['Model'] = __DIR__ . '/i18n';
 
