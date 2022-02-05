@@ -161,12 +161,7 @@ abstract class Model
 
 		}
 
-		/* Check result */
-		if ( !$collection ) return 0;
-
-		$count = $dbr->numRows( $collection );
-
-		return $count;
+		return $collection->numRows();
 
 	}
 
