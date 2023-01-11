@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"model-desc": "Model abstrakcije ORM za razvijalce MediaWikija"
+}
