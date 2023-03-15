@@ -13,7 +13,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
     die('Not an entry point.');
 }
 
-if ( version_compare( $wgVersion, '1.27', '<' ) ) {
+// $wgVersion was replaced by MW_VERSION in MW 1.35 and later
+if ( isset( $wgVersion ) && version_compare( $wgVersion, '1.27', '<' ) ) {
     die('<b>Error:</b> This version of Model requires MediaWiki 1.27 or above.');
 }
 
