@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sherbrooke"
+			"Sherbrooke",
+			"Verdy p"
 		]
 	},
-	"model-desc": "Modèle d'abstraction ORM pour les programmeurs de MediaWiki"
+	"model-desc": "Modèle d’abstraction ORM pour les développeurs de MediaWiki"
 }
