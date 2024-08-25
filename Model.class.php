@@ -175,7 +175,7 @@ abstract class Model
 	public function save( $propvalues = null, $reserved = false )
 	{
 
-		$dbr = wfGetDB( DB_MASTER );
+		$dbr = wfGetDB( DB_PRIMARY );
 		$dbr->begin();
 
 		$sourceprops = $this->properties;
@@ -236,7 +236,7 @@ abstract class Model
 	public function delete()
 	{
 
-		$dbr = wfGetDB( DB_MASTER );
+		$dbr = wfGetDB( DB_PRIMARY );
 
 		$dbr->delete( static::$table,
 			array( 'id' => $this->id )
