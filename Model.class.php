@@ -11,6 +11,8 @@
  * @author Vedmaka < god.vedmaka@gmail.com >
  */
 
+use MediaWiki\MediaWikiServices;
+
 abstract class Model
 {
 
@@ -91,7 +93,7 @@ abstract class Model
 
 		$this->isNew = false;
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 		/* Fetch entity by id */
 		$entity = $dbr->selectRow( static::$table,
@@ -137,7 +139,7 @@ abstract class Model
 	public function count( $where = 'all', $options = array() )
 	{
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 		if ( !is_array( $where ) && $where == 'all' ) {
 
@@ -175,7 +177,7 @@ abstract class Model
 	public function save( $propvalues = null, $reserved = false )
 	{
 
-		$dbr = wfGetDB( DB_PRIMARY );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbr->begin();
 
 		$sourceprops = $this->properties;
@@ -236,7 +238,7 @@ abstract class Model
 	public function delete()
 	{
 
-		$dbr = wfGetDB( DB_PRIMARY );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 		$dbr->delete( static::$table,
 			array( 'id' => $this->id )
@@ -253,7 +255,7 @@ abstract class Model
 	public static function find( $where = 'all', $options = array() )
 	{
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 		if ( !is_array( $where ) && $where == 'all' ) {
 
@@ -328,7 +330,7 @@ abstract class Model
 					$value = "$value";
 				}
 				if ( $this->properties[$name] == 'timestamp' && is_integer( $value ) ) {
-					$dbr = wfGetDB( DB_REPLICA );
+					$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 					$value = $dbr->timestamp( $value );
 				}
 
