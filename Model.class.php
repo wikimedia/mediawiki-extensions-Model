@@ -323,13 +323,13 @@ abstract class Model
 
 				/* Just write value to storage */
 
-				if ( $this->properties[$name] == 'int' && !is_integer( $value ) ) {
+				if ( $this->properties[$name] == 'int' && !is_int( $value ) ) {
 					$value = intval( $value );
 				}
-				if ( $this->properties[$name] == 'string' && is_integer( $value ) ) {
+				if ( $this->properties[$name] == 'string' && is_int( $value ) ) {
 					$value = "$value";
 				}
-				if ( $this->properties[$name] == 'timestamp' && is_integer( $value ) ) {
+				if ( $this->properties[$name] == 'timestamp' && is_int( $value ) ) {
 					$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 					$value = $dbr->timestamp( $value );
 				}
